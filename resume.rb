@@ -3,16 +3,14 @@ require 'mustache'
 
 module Resume
   module HTML 
+    TEMPLATE_LOCATION = 'templates/resume.html.mustache'
+
+    def self.render(data)
+      template = File.read(TEMPLATE_LOCATION)
+      Mustache.render(template, data)
+    end
   end
 end
 
-TEMPLATE_LOCATION = 'templates/html.erb'
-
-def render(data)
-  template = File.read(TEMPLATE_LOCATION)
-  Mustache.render(template, data)
-end
-
-
 OUTPUT_LOCATION = 'build/resume.html'
-File.write(OUTPUT_LOCATION, render({}))
+File.write(OUTPUT_LOCATION, Resume::HTML::render({}))
