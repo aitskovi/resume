@@ -1,5 +1,6 @@
 require 'erb'
 require 'mustache'
+require 'yaml'
 
 module Resume
   module HTML 
@@ -13,4 +14,7 @@ module Resume
 end
 
 OUTPUT_LOCATION = 'build/resume.html'
-File.write(OUTPUT_LOCATION, Resume::HTML::render({}))
+DATA_LOCATION  = 'resume.yml'
+
+data = YAML.load_file(DATA_LOCATION)
+File.write(OUTPUT_LOCATION, Resume::HTML::render(data))

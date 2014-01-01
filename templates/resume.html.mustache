@@ -1,5 +1,22 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Avi Itskovich</title>
-    </head>
+  <head>
+    <title>
+      {{name}}
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1>{{name}}</h1>
+
+      <h2>Open Source Contributions</h2>
+      <ul>
+        {{#open_source}}
+        <li>{{description}}</li>
+        {{/open_source}}
+      </ul>
+    </div>
+  </body>
 </html>
