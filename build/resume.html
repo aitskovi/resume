@@ -5,7 +5,8 @@
       Avi Itskovich
     </title>
 
-    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../vendor/css/bootstrap.min.css">
 
     <style>
       @media print {
@@ -25,71 +26,115 @@
       h3 {
         margin-top: 10px;
       }
+
+      .contact-header {
+        text-align: right;
+      }
+
+      .page {
+        max-width: 800px;
+      }
     </style>
   </head>
   <body>
-    <div class="col-xs-12">
-      <h2>Avi Itskovich <small class="header-handle">(aitskovi)</small></h2>
+    <div class="page col-xs-12">
+
       <div class="col-xs-8">
+       <div class="row">
+         <h2>Avi Itskovich <small class="header-handle">(aitskovi)</small></h2>
+       </div>
+     </div>
 
-        <h3>Experience</h3>
+     <div class="col-xs-4">
+       <div class="row contact-header">
+         <h2><small>avi.itskovich@gmail.com</small></h2>
+       </div>
+     </div>
 
-        <h4>
-          Airbnb
-          <small>Engineering Intern | September 2013 - December 2013</small>
-        </h4>
-        <em class='text-right'>MySQL, Ruby, Javascript, R, (Rails)</em>
-        <ul>
-          <li>Integrated the Payoneer Prepaid Debit Card as a payout method</li>
-          <li>Rewrote the Payment Network/Processor selection system</li>
-          <li>Extracted a large chunk of common currency code into a gem</li>
-        </ul>
-        <h4>
-          Facebook
-          <small>Engineering Intern | January 2013 - May 2013</small>
-        </h4>
-        <em class='text-right'>C++, MySQL</em>
-        <ul>
-          <li>Designed and implemented the directory system for the ColdStorage Project</li>
-          <li>Rewrote the ColdStorage API and created a shell for the system</li>
-          <li>Wrote the code managing disk space across the system</li>
-        </ul>
-        <h4>
-          Twitter
-          <small>Engineering Intern | April 2012 - August 2012</small>
-        </h4>
-        <em class='text-right'>Java, Scala, MySQL, Redis</em>
-        <ul>
-          <li>Helped implement parts of the graph data store</li>
-          <li>Designed and programmed a consistency repair framework</li>
-          <li>Implmented a new comand in the redis database (HSCAN)</li>
-        </ul>
-        <h4>
-          Inkling
-          <small>Engineering Intern | January 2011 - December 2011</small>
-        </h4>
-        <em class='text-right'>Objective-C, C, JavaScript, HTML, Backbone.js, Mustache.js</em>
-        <ul>
-          <li>Created and open sourced and adapter between jQuery and MooTools</li>
-          <li>Added a way to query content in a Inkling book using CSS selectors</li>
-          <li>Redesigned the sign-up and registration flow on iOS</li>
-          <li>Helped create a video player on top of the AVPlayer Library</li>
-          <li>Created the &#39;hotspot&#39; textbook figure on iOS</li>
-        </ul>
 
-        <h3>Open Source</h3>
-        <ul>
-          <li><a href=http://www.github.com/aitskovi/animation>[animation]</a> - Created a queue system for easy sequential animations in iOS</li>
-          <li><a href=http://www.github.com/inkling/backbone-mootools>[backbone-mootools]</a> - Developed an adapter between jQuery and MooTools</li>
-          <li><a href=https://github.com/ReactiveCocoa/ReactiveCocoa/commits/master?author=aitskovi>[ReactiveCocoa]</a> - Contributed common list folding methods (foldLeft/foldRight)</li>
-        </ul>
+     <div class="col-xs-8">
+       <div class="row">
+         <h3>Experience</h3>
 
-      </div>
-      <div class="col-xs-4">
-        <h3>Education</h3>
-        <h4>University of Waterloo <small>September 2009 - May 2014</small></h4>
-        Bachelor of Mathematics in Honours Computer Science
-      </div>
-    </div>
-  </body>
+         <h4>
+           Airbnb
+           <small>Engineering Intern | September 2013 - December 2013</small>
+         </h4>
+         <em class='text-right'>MySQL, Ruby, Javascript, R</em>
+         <ul>
+           <li>Integrated prepaid debit cards as a payout method</li>
+           <li>Rewrote the Payment Network/Processor selection system</li>
+           <li>Created the currency gem, a large well tested set of currency utilities</li>
+         </ul>
+         <h4>
+           Facebook
+           <small>Engineering Intern | January 2013 - May 2013</small>
+         </h4>
+         <em class='text-right'>C++, MySQL</em>
+         <ul>
+           <li>Worked on the ColdStorage project</li>
+           <li>Designed and implemented the directory system</li>
+           <li>Rewrote the API and created a shell for the system</li>
+           <li>Wrote the code managing disk space across the system</li>
+         </ul>
+         <h4>
+           Twitter
+           <small>Engineering Intern | April 2012 - August 2012</small>
+         </h4>
+         <em class='text-right'>Java, Scala, MySQL, Redis</em>
+         <ul>
+           <li>Helped implement parts of the graph data store</li>
+           <li>Designed and programmed a consistency repair framework</li>
+           <li>Implmented a new comand in the redis database (HSCAN)</li>
+         </ul>
+         <h4>
+           Inkling
+           <small>Engineering Intern | January 2011 - December 2011</small>
+         </h4>
+         <em class='text-right'>Objective-C, C, JavaScript, HTML, Backbone.js</em>
+         <ul>
+           <li>Created an adapter between jQuery and MooTools</li>
+           <li>Added a way to search an Inkling book using CSS selectors</li>
+           <li>Redesigned the sign-up and registration flow on iOS</li>
+           <li>Helped create a video player on top of the AVPlayer Library</li>
+           <li>Created the &#39;hotspot&#39; textbook figure on iOS</li>
+         </ul>
+       </div>
+
+       <div class="row">
+         <h3>Open Source</h3>
+         <ul>
+           <li><a href=http://www.github.com/aitskovi/animation>[animation]</a> - Created a queue system for easy sequential animations in iOS</li>
+           <li><a href=http://www.github.com/inkling/backbone-mootools>[backbone-mootools]</a> - Developed an adapter between jQuery and MooTools</li>
+           <li><a href=https://github.com/ReactiveCocoa/ReactiveCocoa/commits/master?author=aitskovi>[ReactiveCocoa]</a> - Contributed common list folding methods (foldLeft/foldRight)</li>
+         </ul>
+       </div>
+     </div>
+
+     <div class="col-xs-4">
+
+       <div class="row">
+         <h3>Skills</h3>
+         <ul>
+           <li>Experience in Web/iOS/Systems Development</li>
+         </ul>
+       </div>
+
+       <div class="row">
+         <h3>Education</h3>
+         <h4>University of Waterloo <small>September 2009 - May 2014</small></h4>
+         Bachelor of Mathematics in Honours Computer Science
+       </div>
+
+       <div class="row">
+         <h3>Contact Info</h3>
+         <ul>
+           <li>Github: <a href="https://www.github.com/aitskovi">aitskovi</a></li>
+           <li>Twitter: <a href="https://www.twitter.com/aitskovi">@aitskovi</a></li>
+           <li>Email: aitskovi@uwaterloo.ca</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </body>
 </html>

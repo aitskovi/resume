@@ -19,19 +19,20 @@ experience:
     - workplace: Airbnb
       position: Engineering Intern
       dates: September 2013 - December 2013
-      tools: MySQL, Ruby, Javascript, R, (Rails)
+      tools: MySQL, Ruby, Javascript, R
       description:
-        - Integrated the Payoneer Prepaid Debit Card as a payout method
+        - Integrated prepaid debit cards as a payout method
         - Rewrote the Payment Network/Processor selection system
-        - Extracted a large chunk of common currency code into a gem
+        - Created the currency gem, a large well tested set of currency utilities
 
     - workplace: Facebook
       position: Engineering Intern
       dates: January 2013 - May 2013
       tools: C++, MySQL
       description:
-        - Designed and implemented the directory system for the ColdStorage Project
-        - Rewrote the ColdStorage API and created a shell for the system
+        - Worked on the ColdStorage project
+        - Designed and implemented the directory system
+        - Rewrote the API and created a shell for the system
         - Wrote the code managing disk space across the system
 
     - workplace: Twitter
@@ -46,13 +47,26 @@ experience:
     - workplace: Inkling
       position: Engineering Intern
       dates: January 2011 - December 2011
-      tools: Objective-C, C, JavaScript, HTML, Backbone.js, Mustache.js
+      tools: Objective-C, C, JavaScript, HTML, Backbone.js
       description:
-        - Created and open sourced and adapter between jQuery and MooTools
-        - Added a way to query content in a Inkling book using CSS selectors
+        - Created an adapter between jQuery and MooTools
+        - Added a way to search an Inkling book using CSS selectors
         - Redesigned the sign-up and registration flow on iOS
         - Helped create a video player on top of the AVPlayer Library
         - Created the 'hotspot' textbook figure on iOS
+
+skills:
+  - Experience in Web/iOS/Systems Development
+
+technologies:
+  - C
+  - C++
+  - Java
+  - Ruby
+  - Javascript
+  - Redis
+  - MySQL
+  - Git
 
 education:
 
