@@ -19,95 +19,137 @@
         content-align: center;
       }
 
-      h1, h2, h3, h4 {
-        margin-bottom: 0px;
-      }
-
-      h3 {
-        margin-top: 10px;
-      }
-
       .contact-header {
         text-align: right;
       }
 
       .page {
-        max-width: 800px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
+      .resume-section-description {
+        display: table-cell;
+      }
+
+      .resume-section-heading {
+        display: table-cell;
+        border-right: 1px solid #999;
+      }
+
+      h4 em.footnote {
+        font-size: 90%;
+      }
+
+      div.row.resume-section {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        display:inline;
+      }
+
+      h1, h2, h3 {
+        margin-top: 10px;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+      }
+
+      a:hover {
+        border-bottom-style: solid;
+        color: black;
+      }
+
+      .alignright {
+        float: right;
+        display:inline;
+      }
+
+      .vcard {
+        display: inline;
+      }
+
     </style>
   </head>
   <body>
     <div class="page col-xs-12">
+      <div id="contact-info col-xs-12" class="vcard">
+        <h1 class="fn">Avi Itskovich (<a href="http://www.github.com/aitskovi">aitskovi</a>)</h1>
+        <p class = "alignright"><a class="email" href="mailto:aitskovi@uwaterloo.ca">aitskovi@uwaterloo.ca</a></p>
+      </div>
 
-      <div class="col-xs-8">
-       <div class="row">
-         <h2>{{name}} <small class="header-handle">({{github}})</small></h2>
-       </div>
-     </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <h3>Experience</h3>
+        </div>
 
-     <div class="col-xs-4">
-       <div class="row contact-header">
-         <h2><small>avi.itskovich@gmail.com</small></h2>
-       </div>
-     </div>
+        <div class="table">
+        {{#experience}}
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              {{workplace}} <br/>
+              <small>{{position}}</small><br/>
+              <small>{{dates}}</small><br/>
+              <small><em class="footnote">{{tools}}</small></em>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              {{#description}}
+              <li>{{.}}</li>
+              {{/description}}
+            </ul>
+          </div>
+        </div>
+        {{/experience}}
+      </div>
 
+        <div class="row">
+          <h3>Open Source</h3>
+        </div>
 
-     <div class="col-xs-8">
-       <div class="row">
-         <h3>Experience</h3>
+        {{#open_source}}
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              {{project}}<br/>
+              <small>{{role}}</small>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>{{description}}</li>
+            </ul>
+          </div>
+        </div>
+        {{/open_source}}
 
-         {{#experience}}
-         <h4>
-           {{workplace}}
-           <small>{{position}} | {{dates}}</small>
-         </h4>
-         <em class='text-right'>{{tools}}</em>
-         <ul>
-           {{#description}}
-           <li>{{.}}</li>
-           {{/description}}
-         </ul>
-         {{/experience}}
-       </div>
+        <div class="row">
+          <h3>Education</h3>
+        </div>
 
-       <div class="row">
-         <h3>Open Source</h3>
-         <ul>
-           {{#open_source}}
-           <li><a href={{link}}>[{{project}}]</a> - {{description}}</li>
-           {{/open_source}}
-         </ul>
-       </div>
-     </div>
-
-     <div class="col-xs-4">
-
-       <div class="row">
-         <h3>Skills</h3>
-         <ul>
-           {{#skills}}
-           <li>{{.}}</li>
-           {{/skills}}
-         </ul>
-       </div>
-
-       <div class="row">
-         <h3>Education</h3>
-         {{#education}}
-         <h4>{{school}} <small>{{dates}}</small></h4>
-         {{description}}
-         {{/education}}
-       </div>
-
-       <div class="row">
-         <h3>Contact Info</h3>
-         <ul>
-           <li>Github: <a href="https://www.github.com/{{github}}">{{github}}</a></li>
-           <li>Twitter: <a href="https://www.twitter.com/{{twitter}}">@{{twitter}}</a></li>
-           <li>Email: {{email}}</li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </body>
+        <div class="row resume-section">
+          {{#education}}
+          <div class="col-xs-4 resume-section-heading">
+            <h4>{{school}} <small>{{dates}}</small></h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>{{description}}</li>
+            </ul>
+          </div>
+          {{/education}}
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

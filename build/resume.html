@@ -19,122 +19,211 @@
         content-align: center;
       }
 
-      h1, h2, h3, h4 {
-        margin-bottom: 0px;
-      }
-
-      h3 {
-        margin-top: 10px;
-      }
-
       .contact-header {
         text-align: right;
       }
 
       .page {
-        max-width: 800px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
+      .resume-section-description {
+        display: table-cell;
+      }
+
+      .resume-section-heading {
+        display: table-cell;
+        border-right: 1px solid #999;
+      }
+
+      h4 em.footnote {
+        font-size: 90%;
+      }
+
+      div.row.resume-section {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        display:inline;
+      }
+
+      h1, h2, h3 {
+        margin-top: 10px;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+      }
+
+      a:hover {
+        border-bottom-style: solid;
+        color: black;
+      }
+
+      .alignright {
+        float: right;
+        display:inline;
+      }
+
+      .vcard {
+        display: inline;
+      }
+
     </style>
   </head>
   <body>
     <div class="page col-xs-12">
+      <div id="contact-info col-xs-12" class="vcard">
+        <h1 class="fn">Avi Itskovich (<a href="http://www.github.com/aitskovi">aitskovi</a>)</h1>
+        <p class = "alignright"><a class="email" href="mailto:aitskovi@uwaterloo.ca">aitskovi@uwaterloo.ca</a></p>
+      </div>
 
-      <div class="col-xs-8">
-       <div class="row">
-         <h2>Avi Itskovich <small class="header-handle">(aitskovi)</small></h2>
-       </div>
-     </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <h3>Experience</h3>
+        </div>
 
-     <div class="col-xs-4">
-       <div class="row contact-header">
-         <h2><small>avi.itskovich@gmail.com</small></h2>
-       </div>
-     </div>
+        <div class="table">
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              Airbnb <br/>
+              <small>Engineering Intern</small><br/>
+              <small>Sept. 2013 - Dec. 2013</small><br/>
+              <small><em class="footnote">MySQL, Ruby, Javascript, R</small></em>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Integrated prepaid debit cards as a payout method</li>
+              <li>Rewrote the Payment Network/Processor selection system</li>
+              <li>Created the currency gem, a large well tested set of currency utilities</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              Facebook <br/>
+              <small>Engineering Intern</small><br/>
+              <small>Jan. 2013 - May 2013</small><br/>
+              <small><em class="footnote">C++, MySQL</small></em>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Worked on the ColdStorage project</li>
+              <li>Designed and implemented the directory system</li>
+              <li>Rewrote the API and created a shell for the system</li>
+              <li>Wrote the code managing disk space across the system</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              Twitter <br/>
+              <small>Engineering Intern</small><br/>
+              <small>April 2012 - August 2012</small><br/>
+              <small><em class="footnote">Java, Scala, MySQL, Redis</small></em>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Helped implement parts of the graph data store</li>
+              <li>Designed and programmed a consistency repair framework</li>
+              <li>Implmented a new comand in the redis database (HSCAN)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              Inkling <br/>
+              <small>Engineering Intern</small><br/>
+              <small>Jan. 2011 - Dec. 2011</small><br/>
+              <small><em class="footnote">Objective-C, C, JavaScript, HTML, Backbone.js</small></em>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Created an adapter between jQuery and MooTools</li>
+              <li>Added a way to search an Inkling book using CSS selectors</li>
+              <li>Redesigned the sign-up and registration flow on iOS</li>
+              <li>Helped create a video player on top of the AVPlayer Library</li>
+              <li>Created the &#39;hotspot&#39; textbook figure on iOS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+        <div class="row">
+          <h3>Open Source</h3>
+        </div>
 
-     <div class="col-xs-8">
-       <div class="row">
-         <h3>Experience</h3>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              animation<br/>
+              <small>Creator</small>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Created a queue system for easy sequential animations in iOS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              backbone-mootools<br/>
+              <small>Creator</small>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Developed an adapter between jQuery and MooTools</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>
+              ReactiveCocoa<br/>
+              <small>Contributor</small>
+            </h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Contributed common list folding methods (foldLeft/foldRight)</li>
+            </ul>
+          </div>
+        </div>
 
-         <h4>
-           Airbnb
-           <small>Engineering Intern | September 2013 - December 2013</small>
-         </h4>
-         <em class='text-right'>MySQL, Ruby, Javascript, R</em>
-         <ul>
-           <li>Integrated prepaid debit cards as a payout method</li>
-           <li>Rewrote the Payment Network/Processor selection system</li>
-           <li>Created the currency gem, a large well tested set of currency utilities</li>
-         </ul>
-         <h4>
-           Facebook
-           <small>Engineering Intern | January 2013 - May 2013</small>
-         </h4>
-         <em class='text-right'>C++, MySQL</em>
-         <ul>
-           <li>Worked on the ColdStorage project</li>
-           <li>Designed and implemented the directory system</li>
-           <li>Rewrote the API and created a shell for the system</li>
-           <li>Wrote the code managing disk space across the system</li>
-         </ul>
-         <h4>
-           Twitter
-           <small>Engineering Intern | April 2012 - August 2012</small>
-         </h4>
-         <em class='text-right'>Java, Scala, MySQL, Redis</em>
-         <ul>
-           <li>Helped implement parts of the graph data store</li>
-           <li>Designed and programmed a consistency repair framework</li>
-           <li>Implmented a new comand in the redis database (HSCAN)</li>
-         </ul>
-         <h4>
-           Inkling
-           <small>Engineering Intern | January 2011 - December 2011</small>
-         </h4>
-         <em class='text-right'>Objective-C, C, JavaScript, HTML, Backbone.js</em>
-         <ul>
-           <li>Created an adapter between jQuery and MooTools</li>
-           <li>Added a way to search an Inkling book using CSS selectors</li>
-           <li>Redesigned the sign-up and registration flow on iOS</li>
-           <li>Helped create a video player on top of the AVPlayer Library</li>
-           <li>Created the &#39;hotspot&#39; textbook figure on iOS</li>
-         </ul>
-       </div>
+        <div class="row">
+          <h3>Education</h3>
+        </div>
 
-       <div class="row">
-         <h3>Open Source</h3>
-         <ul>
-           <li><a href=http://www.github.com/aitskovi/animation>[animation]</a> - Created a queue system for easy sequential animations in iOS</li>
-           <li><a href=http://www.github.com/inkling/backbone-mootools>[backbone-mootools]</a> - Developed an adapter between jQuery and MooTools</li>
-           <li><a href=https://github.com/ReactiveCocoa/ReactiveCocoa/commits/master?author=aitskovi>[ReactiveCocoa]</a> - Contributed common list folding methods (foldLeft/foldRight)</li>
-         </ul>
-       </div>
-     </div>
-
-     <div class="col-xs-4">
-
-       <div class="row">
-         <h3>Skills</h3>
-         <ul>
-           <li>Experience in Web/iOS/Systems Development</li>
-         </ul>
-       </div>
-
-       <div class="row">
-         <h3>Education</h3>
-         <h4>University of Waterloo <small>September 2009 - May 2014</small></h4>
-         Bachelor of Mathematics in Honours Computer Science
-       </div>
-
-       <div class="row">
-         <h3>Contact Info</h3>
-         <ul>
-           <li>Github: <a href="https://www.github.com/aitskovi">aitskovi</a></li>
-           <li>Twitter: <a href="https://www.twitter.com/aitskovi">@aitskovi</a></li>
-           <li>Email: aitskovi@uwaterloo.ca</li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </body>
+        <div class="row resume-section">
+          <div class="col-xs-4 resume-section-heading">
+            <h4>University of Waterloo <small>September 2009 - May 2014</small></h4>
+          </div>
+          <div class="col-xs-8 resume-section-description">
+            <ul>
+              <li>Bachelor of Mathematics in Honours Computer Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

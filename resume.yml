@@ -5,12 +5,15 @@ email: aitskovi@uwaterloo.ca
 
 open_source:
     - project: animation
+      role: Creator
       description: Created a queue system for easy sequential animations in iOS
       link: 'http://www.github.com/aitskovi/animation'
     - project: backbone-mootools
+      role: Creator
       description: Developed an adapter between jQuery and MooTools
       link: 'http://www.github.com/inkling/backbone-mootools'
     - project: ReactiveCocoa
+      role: Contributor
       description: Contributed common list folding methods (foldLeft/foldRight)
       link: 'https://github.com/ReactiveCocoa/ReactiveCocoa/commits/master?author=aitskovi'
 
@@ -18,7 +21,7 @@ experience:
 
     - workplace: Airbnb
       position: Engineering Intern
-      dates: September 2013 - December 2013
+      dates: Sept. 2013 - Dec. 2013
       tools: MySQL, Ruby, Javascript, R
       description:
         - Integrated prepaid debit cards as a payout method
@@ -27,7 +30,7 @@ experience:
 
     - workplace: Facebook
       position: Engineering Intern
-      dates: January 2013 - May 2013
+      dates: Jan. 2013 - May 2013
       tools: C++, MySQL
       description:
         - Worked on the ColdStorage project
@@ -46,7 +49,7 @@ experience:
 
     - workplace: Inkling
       position: Engineering Intern
-      dates: January 2011 - December 2011
+      dates: Jan. 2011 - Dec. 2011
       tools: Objective-C, C, JavaScript, HTML, Backbone.js
       description:
         - Created an adapter between jQuery and MooTools
