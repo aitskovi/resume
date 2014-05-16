@@ -8,20 +8,23 @@ open_source:
       role: Creator
       description: Created a queue system for easy sequential animations in iOS
       link: 'http://www.github.com/aitskovi/animation'
+      page: 'github.com/aitskovi/animation'
     - project: backbone-mootools
       role: Creator
       description: Developed an adapter between jQuery and MooTools
-      link: 'http://www.github.com/inkling/backbone-mootools'
+      link: 'www.github.com/inkling/backbone-mootools'
+      page: 'github.com/inkling/backbone-mootools'
     - project: ReactiveCocoa
       role: Contributor
       description: Contributed common list folding methods (foldLeft/foldRight)
       link: 'https://github.com/ReactiveCocoa/ReactiveCocoa/commits/master?author=aitskovi'
+      page: 'github.com/ReactiveCocoa/ReactiveCocoa'
 
 experience:
 
     - workplace: Airbnb
       position: Engineering Intern
-      dates: Sept. 2013 - Dec. 2013
+      dates: Sept 2013 - Dec 2013
       tools: MySQL, Ruby, Javascript, R
       description:
         - Integrated prepaid debit cards as a payout method
@@ -30,7 +33,7 @@ experience:
 
     - workplace: Facebook
       position: Engineering Intern
-      dates: Jan. 2013 - May 2013
+      dates: Jan 2013 - May 2013
       tools: C++, MySQL
       description:
         - Worked on the ColdStorage project
@@ -40,7 +43,7 @@ experience:
 
     - workplace: Twitter
       position: Engineering Intern
-      dates: April 2012 - August 2012
+      dates: April 2012 - Aug 2012
       tools: Java, Scala, MySQL, Redis
       description:
         - Helped implement parts of the graph data store
@@ -49,7 +52,7 @@ experience:
 
     - workplace: Inkling
       position: Engineering Intern
-      dates: Jan. 2011 - Dec. 2011
+      dates: Jan 2011 - Dec 2011
       tools: Objective-C, C, JavaScript, HTML, Backbone.js
       description:
         - Created an adapter between jQuery and MooTools
@@ -57,19 +60,6 @@ experience:
         - Redesigned the sign-up and registration flow on iOS
         - Helped create a video player on top of the AVPlayer Library
         - Created the 'hotspot' textbook figure on iOS
-
-skills:
-  - Experience in Web/iOS/Systems Development
-
-technologies:
-  - C
-  - C++
-  - Java
-  - Ruby
-  - Javascript
-  - Redis
-  - MySQL
-  - Git
 
 education:
 
